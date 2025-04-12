@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -228,12 +229,10 @@ a {
 }
 
 .logo {
-
-
 }
+
 .logoi {
-    position: absolute;
-    left: 43.5%;
+  text-align: center;
 }
 .menu ul {
     list-style: none;
@@ -268,7 +267,6 @@ a {
     font-size: 13px;
 }
 .sours {
-    margin-top: 100px;
     text-align: center;
     font-size: 22px;
     margin-bottom: 28px;
@@ -754,6 +752,26 @@ body {
       position: relative;
     }
 
+    .container-het {
+      column-gap: 30px;
+    }
+
+    .modal_img {
+      width: 190px;
+    }
+
+    .modal_info {
+      font-size: 14px;
+    }
+
+    .logoi img {
+      width: 160px;
+    }
+
+    .navigation {
+      margin-right: 0;
+    }
+
     .container {
       padding-top: 30px;
     }
@@ -779,13 +797,14 @@ body {
     }
 
     .section {
-      width: 90vw;
+      width: 90%;
       margin-left: 0;
-      padding: 0 10px;
+      margin: 0 auto;
     }
 
     .listen {
-      width: 100vw;
+      width: 100%;
+      text-align: center;
     }
 
     .section h1 {
@@ -798,13 +817,17 @@ body {
       display: block;
     }
 
+    .text {
+      padding-bottom: 0;
+    }
+
     .text p{
-      width: 90vw;
+      width: 100%;
       text-align: center;
     }
 
     .section p {
-      width: 90vw;
+      width: 100%;
       font-size: 14px;
       margin-left: 0;
     }
@@ -819,10 +842,11 @@ body {
 
     .form {
       margin-left: 0;
+      padding: 10px;
     }
 
     .main-form {
-      width: 100vw;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -831,9 +855,14 @@ body {
       padding-bottom: 5px;
     }
 
+    .main-form input {
+      width: 95%;
+    }
+
     .render {
-      width: 100vw;
-      height: 100vw;
+      width: 90vw;
+      height: 90vw;
+      margin: 0 auto;
     }
 
     .delivery-text {
@@ -846,7 +875,7 @@ body {
     }
 
     .delivery-name {
-      width: 100vw;
+      width: 90vw;
     }
 
     .del-p {
@@ -862,10 +891,15 @@ body {
       margin-bottom: 10px;
     }
 
+    .card-company {
+      text-align: center;
+    }
+
     .card-company img {
       width: 90vw;
       margin: 0 auto;
       padding: 0 10px;
+      margin-top: 30px;
     }
 
     iframe {
@@ -874,7 +908,7 @@ body {
     }
 
     .foot {
-      width: 100vw;
+      width: 100%;
       flex-direction: column;
       row-gap: 30px;
     }
@@ -925,4 +959,10 @@ body {
       padding-left: 0;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+  .modal_info {
+    font-size: 12px;
+  }
 }
