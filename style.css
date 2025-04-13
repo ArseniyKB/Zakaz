@@ -278,7 +278,8 @@ a {
     margin-left: 27vw;
 }
 .catalog {
-    margin-left: 48%;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 25px;
 } 
@@ -290,8 +291,9 @@ a {
 }
 
 .hr {
-    position: absolute;
-    left: 30%;
+    /*position: absolute;
+    left: 30%;*/
+    margin: 0 auto;
 }
 
 .section h1 {
@@ -746,6 +748,476 @@ body {
         margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+  body {
+    position: relative;
+  }
+
+  .container-het {
+    column-gap: 30px;
+  }
+
+  .modal_img {
+    width: 190px;
+  }
+
+  .modal_info {
+    font-size: 14px;
+  }
+
+  .logoi img {
+    width: 200px;
+  }
+
+  .navigation {
+    margin-right: 0;
+  }
+
+  .navigation ul li {
+    font-size: 14px;
+  }
+
+  .navigation p {
+    font-size: 13px;
+  }
+
+  .container {
+    padding-top: 30px;
+  }
+
+  .catalog {
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .card_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .card_name {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .section {
+    width: 90%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .listen {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section h1 {
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .text {
+    padding-bottom: 0;
+  }
+
+  .text p{
+    width: 100%;
+    text-align: center;
+  }
+
+  .section p {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .scaz-img, .scaz-img img {
+    display: none;
+  }
+
+  .hr {
+    width: 80%;
+    position: unset;
+    margin: 0 auto;
+  }
+
+  .hr:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .form {
+    margin-left: 0;
+    padding: 70px;
+  }
+
+  .main-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-form p {
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+
+  .main-form input {
+    width: 98%;
+  }
+
+  .render {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
+
+  .delivery {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+
+  .delivery-text {
+    padding: 0 25px;
+  }
+
+  .delivery-name {
+    font-size: 20px;
+  }
+
+  .del-p {
+    font-size: 14px;
+  }
+
+  .punkt {
+    font-size: 15px;
+  }
+
+  .card-company {
+    text-align: center;
+  }
+
+  .card-company img {
+    width: 54vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-right: 25px;
+  }
+
+  iframe {
+      width: 100%;
+      height: 340px;
+      margin-top: 70px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    row-gap: 30px;
+  }
+
+  .logo-foot {
+    margin-left: 0;
+    margin: 0 auto;
+    position: relative;
+    bottom: 39px;
+  }
+
+  .foot-menu {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .foot-menu h4 {
+    margin-bottom: 5px;
+  }
+
+  .foot-menu ul {
+    text-align: center;
+  }
+
+  .foot-menu ul {
+    margin-bottom: 5px;
+  }
+
+  .foot-contacs p {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .foot-cont-adapt {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .social h4 {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    position: relative;
+  }
+
+  .container-het {
+    column-gap: 30px;
+  }
+
+  .modal_img {
+    width: 190px;
+  }
+
+  .modal_info {
+    font-size: 14px;
+  }
+
+  .logoi img {
+    width: 200px;
+  }
+
+  .navigation {
+    margin-right: 0;
+  }
+
+  .navigation ul li {
+    font-size: 14px;
+  }
+
+  .navigation p {
+    font-size: 13px;
+  }
+
+  .container {
+    padding-top: 30px;
+  }
+
+  .catalog {
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .card_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .card_name {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .section {
+    width: 90%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .listen {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section h1 {
+    padding-left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .text {
+    padding-bottom: 0;
+  }
+
+  .text p{
+    width: 100%;
+    text-align: center;
+  }
+
+  .section p {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .scaz-img, .scaz-img img {
+    display: none;
+  }
+
+  .hr {
+    width: 80%;
+    position: unset;
+    margin: 0 auto;
+  }
+
+  .hr:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .form {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .main-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-form p {
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+
+  .main-form input {
+    width: 98%;
+  }
+
+  .render {
+    width: 90vw;
+    height: 90vw;
+    margin: 0 auto;
+  }
+
+  .delivery {
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .delivery-text {
+    width: 90vw;
+    padding: 0 15px;
+  }
+
+  .delivery-text p {
+    width: 90vw;
+  }
+
+  .delivery-name {
+    width: 90vw;
+    font-size: 20px;
+  }
+
+  .del-p {
+    width: 100vw;
+    font-size: 14px;
+  }
+
+  .punkt {
+    width: 100vw;
+    font-size: 15px;
+  }
+
+  .punkt:nth-child(2) {
+    margin-bottom: 10px;
+  }
+
+  .card-company {
+    text-align: center;
+  }
+
+  .card-company img {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  iframe {
+      width: 100%;
+      height: 340px;
+      margin-top: 30px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    row-gap: 30px;
+  }
+
+  .logo-foot {
+    margin-left: 0;
+    margin: 0 auto;
+    position: relative;
+    bottom: 39px;
+  }
+
+  .foot-menu {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .foot-menu h4 {
+    margin-bottom: 5px;
+  }
+
+  .foot-menu ul {
+    text-align: center;
+  }
+
+  .foot-menu ul {
+    margin-bottom: 5px;
+  }
+
+  .foot-contacs p {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .foot-cont-adapt {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .social h4 {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 450px) {
 
     body {
@@ -837,7 +1309,13 @@ body {
     }
 
     .hr {
-      display: none;
+      width: 80%;
+      position: unset;
+      margin: 0 auto;
+    }
+
+    .hr:nth-child(2) {
+      margin-top: 50px;
     }
 
     .form {
@@ -863,6 +1341,11 @@ body {
       width: 90vw;
       height: 90vw;
       margin: 0 auto;
+    }
+
+    .delivery {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .delivery-text {
@@ -905,6 +1388,7 @@ body {
     iframe {
         width: 100%;
         height: 280px;
+        margin-top: 20px;
     }
 
     .foot {
@@ -916,6 +1400,7 @@ body {
     .logo-foot {
       margin-left: 0;
       margin: 0 auto;
+      position: unset;
     }
 
     .foot-menu {
@@ -964,5 +1449,15 @@ body {
 @media screen and (max-width: 380px) {
   .modal_info {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .modal_info {
+    font-size: 12px;
+  }
+
+  .modal_btn {
+    font-size: 14px;
   }
 }
