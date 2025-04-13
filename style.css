@@ -717,10 +717,7 @@ body {
 }
 
 .middle {
-  position: relative;
-  top: 50%;
-  left: 19%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 0%);
 }
 
 .navigation-top {
@@ -778,7 +775,7 @@ input[name="r"] {
 
 .modal_card-wrapper {
   display: flex;
-  /* justify-content: space-between; */
+  column-gap: 20px;
   flex-direction: row;
   align-items: center;
 }
@@ -855,11 +852,6 @@ input[name="r"] {
     padding: 2rem 1.25rem;
     width: fit-content;
     height: 76vh;
-  }
-
-  .middle {
-    top: 47%;
-    left: 24%;
   }
 
   .slider {
@@ -1098,13 +1090,8 @@ input[name="r"] {
 
   .modal_card {
     padding: 2rem 1.25rem;
-    width: fit-content;
     height: 76vh;
-  }
-
-  .middle {
-    top: 42%;
-    left: 25%;
+    width: 90%;
   }
 
   .slider {
@@ -1367,12 +1354,6 @@ input[name="r"] {
       height: 200px;
     }
 
-    .middle {
-      top: 24%;
-      left: 32%;
-      margin: 0 auto;
-    }
-
     .modal_card-wrapper {
       flex-direction: column;
     }
@@ -1607,8 +1588,13 @@ input[name="r"] {
     font-size: 12px;
   }
 
-  .middle {
-    left: 43%;
+  .modal_card {
+    padding-top: 3rem;
+  }
+
+  .slider {
+    width: 170px;
+    height: 170px;
   }
 
   .modal_btn {
