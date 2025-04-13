@@ -656,7 +656,13 @@ body {
         grid-template-columns: 330px;
     }
     .modal_card {
-        max-width: 350px;
+        width: fit-content;
+        height: 60vw;
+    }
+
+    .modal__wrapper {
+      width: 37vw;
+      height: fit-content;
     }
 }
 @media screen and (min-width: 768px) { 
@@ -681,7 +687,8 @@ body {
         font-size: var(--h3-font-size);
     }
     .modal_card {
-        max-width: 376px;
+        width: fit-content;
+        height: fit-content;
         padding: 3rem 2.5rem 2.5rem;
     }
     .modal_img {
@@ -693,11 +700,89 @@ body {
     }
     .modal_buttons {
         column-gap: 1rem;
+        flex-direction: column;
     }
     iframe {
         height: 600px;
     }
 }
+
+/* слайдер */
+
+.slider {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid #fff;
+}
+
+.middle {
+  position: relative;
+  top: 50%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation-top {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: .7;
+  border-radius: 10px;
+  transition: all .4s ease;
+}
+.bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+
+}
+.slide {
+  width: 25%;
+  transition: all .6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+} 
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.modal_card-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  align-items: center;
+}
+
 @media screen and (max-width: 500px){
     .logoi img{
         width: 120px
@@ -764,6 +849,22 @@ body {
 
   .modal_info {
     font-size: 14px;
+  }
+
+  .modal_card {
+    padding: 2rem 1.25rem;
+    width: fit-content;
+    height: 76vh;
+  }
+
+  .middle {
+    top: 47%;
+    left: 24%;
+  }
+
+  .slider {
+    width: 350px;
+    height: 350px;
   }
 
   .logoi img {
@@ -993,6 +1094,22 @@ body {
 
   .modal_info {
     font-size: 14px;
+  }
+
+  .modal_card {
+    padding: 2rem 1.25rem;
+    width: fit-content;
+    height: 76vh;
+  }
+
+  .middle {
+    top: 42%;
+    left: 25%;
+  }
+
+  .slider {
+    width: 300px;
+    height: 300px;
   }
 
   .logoi img {
@@ -1228,12 +1345,36 @@ body {
       column-gap: 30px;
     }
 
+    .modal {
+      padding: 1rem 1.5rem;
+    }
+
     .modal_img {
       width: 190px;
     }
 
     .modal_info {
-      font-size: 14px;
+      font-size: 13px;
+    }
+
+    .modal_card {
+      padding: 2rem 1.25rem;
+      height: min-content;
+    }
+
+    .slider {
+      width: 200px;
+      height: 200px;
+    }
+
+    .middle {
+      top: 24%;
+      left: 32%;
+      margin: 0 auto;
+    }
+
+    .modal_card-wrapper {
+      flex-direction: column;
     }
 
     .logoi img {
@@ -1450,6 +1591,15 @@ body {
   .modal_info {
     font-size: 12px;
   }
+
+  .slider {
+    width: 190px;
+    height: 190px;
+  }
+
+  .middle {
+    left: 36%;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -1457,7 +1607,11 @@ body {
     font-size: 12px;
   }
 
+  .middle {
+    left: 43%;
+  }
+
   .modal_btn {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
