@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: 1px solid red;*/
+    /* border: 1px solid red; */
 }
 
 body {
@@ -314,6 +314,7 @@ a {
 .wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -322,20 +323,28 @@ a {
     font-size: 18px;
 }
 
-.scaz-img img {
-  width: 80%;
-  position: relative;
-  bottom: 80px;
+.sketchfab-embed-wrapper iframe {
+  width: 100%;
+}
+
+#skaz {
+  margin-bottom: 40px;
+}
+
+.scaz-img {
+  margin-bottom: 70px;
 }
 
 
 .form {
-    margin-left: 2vw;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
 .render {
-    margin-top: -20px;
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
 }
 .main-form {
     background-color: #779bee;
@@ -445,7 +454,7 @@ a {
     width: 300px;
 }
 .social {
-    margin-left: 150px;
+  margin-left: 86px;
 }
 .social-icons a {
     transition: transform;
@@ -936,8 +945,8 @@ input[name="r"] {
     margin-left: 0;
   }
 
-  .scaz-img, .scaz-img img {
-    display: none;
+  .sketchfab-embed-wrapper iframe {
+    height: 100vh;
   }
 
   .hr {
@@ -953,6 +962,8 @@ input[name="r"] {
   .form {
     margin-left: 0;
     padding: 70px;
+    padding-top: 0;
+    text-align: center;
   }
 
   .main-form {
@@ -971,8 +982,8 @@ input[name="r"] {
 
   .render {
     width: 80vw;
-    height: 80vw;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .delivery {
@@ -1176,9 +1187,7 @@ input[name="r"] {
     margin-left: 0;
   }
 
-  .scaz-img, .scaz-img img {
-    display: none;
-  }
+  
 
   .hr {
     width: 80%;
@@ -1211,8 +1220,8 @@ input[name="r"] {
 
   .render {
     width: 90vw;
-    height: 90vw;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .delivery {
@@ -1426,8 +1435,13 @@ input[name="r"] {
       margin-left: 0;
     }
 
-    .scaz-img, .scaz-img img {
-      display: none;
+    .sketchfab-embed-wrapper iframe {
+      width: 90%;
+      height: 80vw;
+    }
+
+    .scaz-img {
+      margin-bottom: 60px;
     }
 
     .hr {
@@ -1437,12 +1451,16 @@ input[name="r"] {
     }
 
     .hr:nth-child(2) {
-      margin-top: 50px;
+      margin-top: 40px;
     }
 
     .form {
       margin-left: 0;
       padding: 10px;
+    }
+
+    .form-bar {
+      margin-top: 50px;
     }
 
     .main-form {
@@ -1460,9 +1478,10 @@ input[name="r"] {
     }
 
     .render {
-      width: 90vw;
-      height: 90vw;
+      width: 85vw;
+      height: fit-content;
       margin: 0 auto;
+      margin-bottom: 30px;
     }
 
     .delivery {
